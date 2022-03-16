@@ -1,15 +1,16 @@
 #include <cstdlib>
 #include <cstdio>
 #include <iostream>
+// #include <conio>
 
-using namespace std;
+// using namespace std;
 
 int main(int nNumberofArgs, char *pszArgs[])
 {
     // enter the temp in C
     int celsius;
-    cout << "Enter the temp in Celsius: ";
-    cin >> celsius;
+    std::cout << "Enter the temp in Celsius: ";
+    std::cin >> celsius;
 
     // calculate converstion factor from C -> F
     int factor;
@@ -20,11 +21,12 @@ int main(int nNumberofArgs, char *pszArgs[])
     fahrenheit = factor * celsius / 100 + 32;
 
     // output the results
-    cout << "fahrenheit value is: ";
-    cout << fahrenheit << endl;
+    std::cout << "fahrenheit value is: ";
+    std::cout << fahrenheit << std::endl;
 
     // wait until the user is ready before terminating the program to allow the user to see the results
-    cout << "Press Enter to continue..." << endl;
-    cin.get();
+    std::cout << "Press Enter to continue..." << std::endl;
+    // cin.getch();
+    std::cin.get();
     return 0;
 }
